@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="675.0" prefWidth="1190.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.learner.find_partner">
+   <children>
+      <ListView fx:id="partner_view" layoutX="88.0" layoutY="36.0" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" styleClass="list-cell" stylesheets="@../../stylesheets/learner/find_partner.css" />
+      <AnchorPane layoutX="-2.0" layoutY="603.0" prefHeight="66.0" prefWidth="1191.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

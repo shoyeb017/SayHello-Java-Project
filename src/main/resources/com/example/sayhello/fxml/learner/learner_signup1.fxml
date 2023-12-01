@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="lanchore" prefHeight="760.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.learner.signup">
+   <children>
+      <Rectangle fx:id="anchore1" arcHeight="5.0" arcWidth="5.0" height="782.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <fill>
+            <LinearGradient endX="0.9734848195856268" endY="0.9242424219846725" startX="0.23863636183016235">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.2862745225429535" blue="0.729411780834198" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.5843137502670288" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="260.0" fitWidth="491.0" layoutX="115.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="282.33517837524414" AnchorPane.leftAnchor="115.0" AnchorPane.topAnchor="249.0">
+         <image>
+            <Image url="@../../image/learner_signup1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logo" fitHeight="101.0" fitWidth="110.0" layoutX="303.0" layoutY="614.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="67.45199966430664" AnchorPane.leftAnchor="303.0" AnchorPane.topAnchor="614.0">
+         <image>
+            <Image url="@../../image/logo-white.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="pane1" layoutX="703.0" layoutY="118.0" prefHeight="602.0" prefWidth="496.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);">
+         <children>
+            <Text layoutX="34.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address" wrappingWidth="331.04990577697754">
+               <font>
+                  <Font name="HP Simplified" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="36.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="331.04990577697754">
+               <font>
+                  <Font name="HP Simplified" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="36.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" wrappingWidth="221.18320655822754">
+               <font>
+                  <Font name="HP Simplified" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="34.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" wrappingWidth="331.04990577697754">
+               <font>
+                  <Font name="HP Simplified" size="14.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="34.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update personal information for better partner recommendations" wrappingWidth="437.32623291015625">
+               <font>
+                  <Font name="HP Simplified" size="16.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color green="0.2862745225429535" blue="0.729411780834198" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="0.2862745225429535" blue="0.729411780834198" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text layoutX="255.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" wrappingWidth="331.04990577697754">
+               <font>
+                  <Font name="HP Simplified" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="last_name" layoutX="255.0" layoutY="133.0" prefHeight="28.0" prefWidth="205.0" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(from 0% 0% to 100% 100% , #0049ba 0%, #0095ff 100%); -fx-border-width: 0px 0px  2px 0px;">
+               <font>
+                  <Font name="HP Simplified" size="14.0" />
+               </font>
+            </TextField>
+            <Text layoutX="36.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Re-type Password" wrappingWidth="331.04990577697754">
+               <font>
+                  <Font name="HP Simplified" size="14.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="re_pass" layoutX="36.0" layoutY="354.0" prefHeight="26.0" prefWidth="429.0" style="-fx-border-color: linear-gradient(from 0% 0% to 100% 100% , #0049ba 0%, #0095ff 100%); -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;">
+               <font>
+                  <Font name="HP Simplified" size="14.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="error_text" layoutX="34.0" layoutY="482.0" prefHeight="15.0" prefWidth="301.0" textFill="RED">
+               <font>
+                  <Font name="HP Simplified" size="12.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Text fx:id="qu1" fill="WHITE" fontSmoothingType="LCD" layoutX="57.0" layoutY="556.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Learning a new language is like opening a window to a whole new world" textAlignment="CENTER" wrappingWidth="620.7931518554688" AnchorPane.leftAnchor="57.0">
+         <font>
+            <Font name="HP Simplified" size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="sign" layoutX="819.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="2.0" text="SignUp" AnchorPane.leftAnchor="737.0">
+         <font>
+            <Font name="HP Simplified Bold" size="36.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.2862745225429535" blue="0.729411780834198" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.5843137502670288" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Line endX="100.0" layoutX="529.0" layoutY="53.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Circle fill="#f2f5f7" layoutX="408.0" layoutY="53.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="#ffffff00" layoutX="648.0" layoutY="55.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Line endX="100.0" layoutX="767.0" layoutY="53.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Circle fill="#ffffff00" layoutX="887.0" layoutY="54.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Text layoutX="400.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+         <font>
+            <Font name="HP Simplified" size="31.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.4659090891028896" startY="0.23106062051021692">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.2862745225429535" blue="0.729411780834198" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9919246298788695">
+                     <color>
+                        <Color green="0.6313725709915161" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.6313725709915161" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fill="#fcfcfc" layoutX="639.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+         <font>
+            <Font name="HP Simplified" size="31.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="880.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+         <font>
+            <Font name="HP Simplified" size="31.0" />
+         </font>
+      </Text>
+      <TextField fx:id="first_name" layoutX="822.0" layoutY="251.0" prefHeight="28.0" prefWidth="205.0" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(from 0% 0% to 100% 100% , #0049ba 0%, #0095ff 100%); -fx-border-width: 0px 0px  2px 0px;" AnchorPane.leftAnchor="737.0">
+         <font>
+            <Font name="HP Simplified" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="email" layoutX="822.0" layoutY="324.0" prefHeight="28.0" prefWidth="429.0" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(from 0% 0% to 100% 100% , #0049ba 0%, #0095ff 100%); -fx-border-width: 0px 0px  2px 0px;" AnchorPane.leftAnchor="737.0">
+         <font>
+            <Font name="HP Simplified" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pass" layoutX="822.0" layoutY="396.0" prefHeight="26.0" prefWidth="429.0" style="-fx-border-color: linear-gradient(from 0% 0% to 100% 100% , #0049ba 0%, #0095ff 100%); -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;" AnchorPane.leftAnchor="737.0">
+         <font>
+            <Font name="HP Simplified" size="14.0" />
+         </font></PasswordField>
+      <Button layoutX="822.0" layoutY="628.0" mnemonicParsing="false" onAction="#switch_learner_signup2" prefHeight="50.0" prefWidth="429.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100% , #0049ba 0%, #0095ff 100%);" styleClass="sign_btn" stylesheets="@../../stylesheets/learner/learner_signup1.css" text="Next" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="737.0">
+         <font>
+            <Font name="HP Simplified Bold" size="27.0" />
+         </font>
+      </Button>
+      <Text fx:id="qu12" fill="WHITE" fontSmoothingType="LCD" layoutX="57.0" layoutY="167.26000022888184" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello!! We are pleased to have you with us. Hope that you will have a great journey with us" textAlignment="CENTER" wrappingWidth="611.1931571960449" AnchorPane.leftAnchor="57.0" AnchorPane.topAnchor="139.0">
+         <font>
+            <Font name="HP Simplified" size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="qu121" fill="#00eeff" fontSmoothingType="LCD" layoutX="81.0" layoutY="165.11599922180176" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello!!" wrappingWidth="618.6597900390625" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="138.73999977111816">
+         <font>
+            <Font name="HP Simplified" size="28.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="gender" layoutX="737.0" layoutY="547.0" stylesheets="@../../stylesheets/learner/learner_signup1.css" AnchorPane.leftAnchor="737.0" />
+      <Button layoutX="81.0" layoutY="49.0" mnemonicParsing="false" onAction="#back_login" prefHeight="51.0" prefWidth="94.0" style="-fx-background-color: white;" styleClass="img_btn" text="Back" textAlignment="CENTER">
+         <font>
+            <Font name="HP Simplified Bold" size="26.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.2862745225429535" blue="0.729411780834198" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.5843137502670288" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <stylesheets>
+            <URL value="@../../stylesheets/learner/learner_signup1.css" />
+            <URL value="@../../stylesheets/loginpage.css" />
+         </stylesheets>
+      </Button>
+   </children>
+</AnchorPane>

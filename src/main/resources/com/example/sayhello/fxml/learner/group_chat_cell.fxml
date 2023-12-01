@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gridPane" prefHeight="48.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+        <Circle fx:id="dpl" fill="#ff000000" layoutX="21.0" layoutY="23.0" radius="16.0" stroke="#ffffff00" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="5.0" />
+      <AnchorPane fx:id="l" layoutX="43.0" layoutY="6.0" prefHeight="35.0" style="-fx-background-color: e3e5dc; -fx-background-radius: 7px;" AnchorPane.leftAnchor="43.0">
+         <children>
+            <Label fx:id="msgl" layoutX="3.0" layoutY="8.0" prefHeight="15.0" textAlignment="RIGHT" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0">
+               <font>
+                  <Font name="HP Simplified" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="r" layoutX="43.0" layoutY="6.0" prefHeight="35.0" snapToPixel="false" style="-fx-background-color: add8e6; -fx-background-radius: 7px;" AnchorPane.leftAnchor="43.0">
+         <children>
+            <Label fx:id="msgr" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="8.0" prefHeight="15.0" textAlignment="RIGHT" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0">
+               <font>
+                  <Font name="HP Simplified" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+Ema
+Watson
+cha@gmail.com
+12345
+Female
+USA
+English
+Japanese
+file:/D:/Java%20Project/All%20Resouce/cha.jpg
+Exploring

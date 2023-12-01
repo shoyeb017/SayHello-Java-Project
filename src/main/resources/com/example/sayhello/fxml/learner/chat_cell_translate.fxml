@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="200.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100% , #0049ba 0%, #0095ff 100%);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.learner.chat_inbox_cell_translate">
+   <children>
+      <AnchorPane layoutX="17.0" layoutY="16.0" prefWidth="570.0" style="-fx-background-color: white; -fx-background-radius: 30px; -fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <FontAwesomeIconView glyphName="LANGUAGE" layoutX="273.0" layoutY="48.0" size="40" />
+            <Label fx:id="text2" alignment="TOP_CENTER" layoutX="7.0" layoutY="78.0" minHeight="30.0" prefWidth="558.0" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="HP Simplified" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

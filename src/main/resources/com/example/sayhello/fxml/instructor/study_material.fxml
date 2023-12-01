@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="696.0" prefWidth="841.0" style="-fx-background-color: white; -fx-background-radius: 40px; -fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" stylesheets="@../../stylesheets/instructor/course_details.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.instructor.study_material">
+   <children>
+      <ListView fx:id="study_view" layoutX="17.0" layoutY="16.0" prefHeight="545.0" prefWidth="807.0" style="-fx-background-color: white;" styleClass="date-cell" stylesheets="@../../stylesheets/instructor/course_details.css" />
+      <Label layoutX="18.0" layoutY="584.0" prefHeight="38.0" prefWidth="202.0" text="Study Material" textFill="#8166eb">
+         <font>
+            <Font name="HP Simplified Bold" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="b1" layoutX="76.0" layoutY="631.0" prefHeight="248.0" prefWidth="694.0" style="-fx-background-color: #8166eb; -fx-background-radius: 20px; -fx-border-color: white; -fx-border-radius: 20px; -fx-border-width: 2px 2px 2px 2px; -fx-effect: dropshadow(gaussian,rgba(255, 255, 255, 1),10,0.5,0,0);">
+         <children>
+            <ComboBox fx:id="type" layoutX="515.0" layoutY="119.0" prefHeight="28.0" prefWidth="138.0" promptText="Ex. Video" style="-fx-border-width: 0px 0px 2px 0px;" styleClass="choice-box" stylesheets="@../../stylesheets/instructor/course_details.css" />
+            <Text fill="WHITE" layoutX="430.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Type:" wrappingWidth="86.42000579833984">
+               <font>
+                  <Font name="HP Simplified" size="20.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="CHECK_SQUARE" layoutX="558.0" layoutY="43.0" onMouseClicked="#add_bar" size="40" styleClass="img_btn" />
+            <FontAwesomeIconView fill="WHITE" glyphName="MINUS" layoutX="620.0" layoutY="44.0" onMouseClicked="#close_bar" size="40" styleClass="img_btn" />
+            <TextField fx:id="tno" layoutX="35.0" layoutY="39.0" prefHeight="39.0" prefWidth="86.0" promptText="No" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" stylesheets="@../../stylesheets/instructor/course_details.css">
+               <font>
+                  <Font name="HP Simplified" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tlink" layoutX="36.0" layoutY="109.0" prefHeight="39.0" prefWidth="322.0" promptText="Study Material Link" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" stylesheets="@../../stylesheets/instructor/course_details.css">
+               <font>
+                  <Font name="HP Simplified" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tdes" layoutX="37.0" layoutY="170.0" prefHeight="39.0" prefWidth="622.0" promptText="Description" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" stylesheets="@../../stylesheets/instructor/course_details.css">
+               <font>
+                  <Font name="HP Simplified" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tname" layoutX="159.0" layoutY="39.0" prefHeight="39.0" prefWidth="329.0" promptText="Topic Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" stylesheets="@../../stylesheets/instructor/course_details.css">
+               <font>
+                  <Font name="HP Simplified" size="20.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIconView fill="WHITE" glyphName="FILE" layoutX="361.0" layoutY="135.0" onMouseClicked="#upload" size="25" styleClass="img_btn" />
+            <Label fx:id="error_text" alignment="CENTER" layoutX="53.0" layoutY="219.0" prefHeight="18.0" prefWidth="589.0" textFill="RED">
+               <font>
+                  <Font name="HP Simplified" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1.0" layoutY="625.0" prefHeight="85.0" prefWidth="840.0" style="-fx-background-color: white;" />
+      <FontAwesomeIconView fill="#f46968" glyphName="PLUS_SQUARE" layoutX="400.0" layoutY="620.0" onMouseClicked="#open_bar" size="55" styleClass="img_btn" />
+   </children>
+</AnchorPane>

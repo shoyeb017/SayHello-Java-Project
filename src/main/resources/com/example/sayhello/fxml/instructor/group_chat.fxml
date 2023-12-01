@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="685.0" prefWidth="825.0" style="-fx-background-color: #eceae5; -fx-background-radius: 40px; -fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" stylesheets="@../../stylesheets/learner/chat_box.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.instructor.group_chat">
+   <children>
+      <AnchorPane layoutX="32.0" layoutY="593.0" prefHeight="54.0" prefWidth="770.0" style="-fx-background-color: d5d3d3; -fx-background-radius: 25px;">
+         <children>
+            <TextField fx:id="text1" focusTraversable="false" layoutX="19.0" layoutY="3.0" prefHeight="50.0" prefWidth="665.0" promptText="Type a massage here" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #2af598 0% , #009efd 100%); -fx-border-width: 0px 0px 0px 0px;">
+               <font>
+                  <Font name="HP Simplified" size="24.0" />
+               </font>
+            </TextField>
+            <Circle layoutX="735.0" layoutY="27.0" onMouseClicked="#btn_insert" radius="21.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" styleClass="img_btn" />
+            <FontAwesomeIconView fill="WHITE" glyphName="SEND" layoutX="721.0" layoutY="36.0" onMouseClicked="#btn_insert" size="23" styleClass="img_btn" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="f_name" focusTraversable="false" layoutX="12.0" layoutY="15.0" prefHeight="50.0" prefWidth="665.0" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #2af598 0% , #009efd 100%); -fx-border-width: 0px 0px 0px 0px;" text="Group Chat">
+         <font>
+            <Font name="HP Simplified Bold" size="33.0" />
+         </font>
+      </TextField>
+      <ListView fx:id="inbox_view" layoutX="36.0" layoutY="99.0" prefHeight="472.0" prefWidth="755.0" styleClass="list-cell" stylesheets="@../../stylesheets/learner/chat_box.css" />
+   </children>
+</AnchorPane>

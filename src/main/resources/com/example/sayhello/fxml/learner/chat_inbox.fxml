@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="675.0" prefWidth="825.0" stylesheets="@../../stylesheets/learner/chat_box.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.learner.chat_inbox">
+   <children>
+      <ListView layoutX="25.0" layoutY="91.0" prefHeight="489.0" prefWidth="779.0" />
+      <AnchorPane layoutX="32.0" layoutY="593.0" prefHeight="54.0" prefWidth="770.0" style="-fx-background-color: e5e3dc; -fx-background-radius: 25px;">
+         <children>
+            <TextField fx:id="text1" layoutX="19.0" layoutY="3.0" prefHeight="50.0" prefWidth="665.0" promptText="Type a massage here" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #2af598 0% , #009efd 100%); -fx-border-width: 0px 0px 0px 0px;">
+               <font>
+                  <Font name="HP Simplified" size="24.0" />
+               </font>
+            </TextField>
+            <Circle layoutX="735.0" layoutY="27.0" onMouseClicked="#btn_insert" radius="21.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" styleClass="img_btn">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16470588743686676" green="0.9607843160629272" blue="0.5960784554481506" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="0.6196078658103943" blue="0.9921568632125854" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <FontAwesomeIconView fill="WHITE" glyphName="SEND" layoutX="721.0" layoutY="36.0" onMouseClicked="#btn_insert" size="23" styleClass="img_btn" />
+         </children>
+      </AnchorPane>
+      <Circle fx:id="dp" fill="DODGERBLUE" layoutX="62.0" layoutY="45.0" radius="31.0" strokeType="INSIDE">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.16470588743686676" green="0.9607843160629272" blue="0.5960784554481506" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.6196078658103943" blue="0.9921568632125854" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Circle>
+      <TextField fx:id="f_name" layoutX="92.0" layoutY="14.0" prefHeight="50.0" prefWidth="665.0" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #2af598 0% , #009efd 100%); -fx-border-width: 0px 0px 0px 0px;" text="Shoyeb">
+         <font>
+            <Font name="HP Simplified" size="24.0" />
+         </font>
+      </TextField>
+      <Text layoutX="110.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.16470588743686676" green="0.9607843160629272" blue="0.5960784554481506" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.6196078658103943" blue="0.9921568632125854" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <ListView fx:id="inbox_view" layoutX="36.0" layoutY="99.0" prefHeight="472.0" prefWidth="755.0" style="-fx-background-color: white;" styleClass="list-cell" stylesheets="@../../stylesheets/learner/chat_box.css" />
+      <Circle fill="#00b445" layoutX="85.0" layoutY="63.0" radius="8.0" stroke="#04ff00" strokeType="INSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

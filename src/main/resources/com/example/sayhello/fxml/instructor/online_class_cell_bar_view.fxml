@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="601.0" style="-fx-background-color: black;" stylesheets="@../../stylesheets/instructor/course_details.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.instructor.online_class_cell_bar_view">
+   <children>
+      <Label fx:id="t_name" alignment="TOP_CENTER" layoutY="9.0" prefHeight="96.0" prefWidth="600.0" text="Word" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="HP Simplified Bold" size="42.0" />
+         </font>
+      </Label>
+      <Label fx:id="t_sd" alignment="TOP_CENTER" layoutX="321.0" layoutY="191.0" prefHeight="158.0" prefWidth="268.0" text="Schedule" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="HP Simplified" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="t_des" alignment="TOP_CENTER" layoutX="12.0" layoutY="359.0" prefHeight="158.0" prefWidth="574.0" text="Description" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified" size="20.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" layoutX="438.0" layoutY="165.0" size="40" styleClass="img_btn" text="" />
+      <Line endX="131.46031188964844" layoutX="290.0" layoutY="227.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" style="-fx-rotate: 90;" />
+      <Line endX="309.0" layoutX="291.0" layoutY="110.0" startX="-291.0" stroke="WHITE" strokeWidth="2.0" />
+      <Hyperlink fx:id="t_link" alignment="TOP_CENTER" layoutX="8.0" layoutY="186.0" onAction="#web" prefHeight="150.0" prefWidth="288.0" text="Hyperlink" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="HP Simplified" size="25.0" />
+         </font>
+      </Hyperlink>
+      <Line endX="309.0" layoutX="290.0" layoutY="344.0" startX="-291.0" stroke="WHITE" strokeWidth="2.0" />
+      <FontAwesomeIconView fill="WHITE" glyphName="LINK" layoutX="123.0" layoutY="170.0" size="40" styleClass="img_btn" />
+      <FontAwesomeIconView fx:id="exit" fill="WHITE" glyphName="POWER_OFF" layoutX="26.0" layoutY="551.0" onMouseClicked="#go_exit" size="30" styleClass="img_btn" />
+   </children>
+</AnchorPane>

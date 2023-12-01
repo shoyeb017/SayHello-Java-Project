@@ -1,0 +1,14 @@
+Gojo
+Satoru
+gojo@gmail.com
+1234
+Male
+USA
+English
+Japanese
+file:/D:/Java%20Project/All%20Resouce/geto.jpg
+Passionate Japanese language instructor dedicated to fostering a love for language learning. With a deep understanding of Japanese culture and language nuances, I create engaging and immersive lessons that cater to diverse learning styles.
+101
+Japanese Basics
+Embark on a journey into the heart of Japan with our Japanese Basics course. Perfect for beginners, this immersive program introduces essential language skills, from mastering hiragana and katakana to building a foundation in everyday conversations.
+0

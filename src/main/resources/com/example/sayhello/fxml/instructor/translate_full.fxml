@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="1186.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.instructor.translate_full">
+   <children>
+      <Pane prefHeight="674.0" prefWidth="1186.0" styleClass="bg" stylesheets="@../../stylesheets/learner/home.css">
+         <children>
+            <AnchorPane layoutX="52.0" layoutY="94.0" prefHeight="525.0" prefWidth="1083.0" styleClass="rectangle">
+               <children>
+                  <Text fx:id="lang_1" fill="#7100ff" layoutX="208.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="lang 1">
+                     <font>
+                        <Font name="HP Simplified" size="12.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="inputTextField" alignment="CENTER" focusTraversable="false" layoutX="29.0" layoutY="26.0" prefHeight="74.0" prefWidth="395.0" promptText="Enter Text" style="-fx-background-color: white; -fx-background-radius: 15px;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <Button alignment="CENTER" layoutX="447.0" layoutY="18.0" mnemonicParsing="false" onAction="#Translate" prefHeight="47.0" prefWidth="115.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100% ,#7100ff  0%, #e100ff 100%); -fx-background-radius: 25px;" styleClass="img_btn" text="Translate" textFill="WHITE">
+                     <font>
+                        <Font name="HP Simplified Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Text fx:id="lang_2" fill="#7100ff" layoutX="791.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="lang 2" />
+                  <Label fx:id="outputTextArea" alignment="TOP_CENTER" layoutX="584.0" layoutY="26.0" prefHeight="478.0" prefWidth="438.0" style="-fx-background-color: white; -fx-background-radius: 15px;" wrapText="true">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView accessibleRole="BUTTON" glyphName="CLONE" layoutX="1038.0" layoutY="89.0" onMouseClicked="#copy" selectionFill="BLACK" size="28" strikethrough="true" stroke="#c71c1c00" strokeDashOffset="4.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="15.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="img_btn" wrappingWidth="36.49995136260986">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8823529481887817" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9973082099596231">
+                                 <color>
+                                    <Color green="0.2862745225429535" blue="0.729411780834198" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.4431372582912445" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIconView>
+                  <AnchorPane layoutX="488.0" layoutY="67.0" onMouseClicked="#Cng" styleClass="img_btn" />
+                  <FontAwesomeIconView accessibleRole="BUTTON" glyphName="EXCHANGE" layoutX="488.0" layoutY="98.0" onMouseClicked="#Cng" selectionFill="BLACK" size="30" strikethrough="true" stroke="#c71c1c00" strokeDashOffset="4.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="15.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="img_btn" wrappingWidth="36.49995136260986">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.4431372582912445" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9973082099596231">
+                                 <color>
+                                    <Color green="0.2862745225429535" blue="0.729411780834198" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.8823529481887817" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fx:id="close" accessibleRole="BUTTON" glyphName="CLOSE" layoutX="1039.0" layoutY="43.0" onMouseClicked="#close_translate" selectionFill="BLACK" size="28" strikethrough="true" stroke="#c71c1c00" strokeDashOffset="4.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeMiterLimit="15.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="img_btn" wrappingWidth="36.49995136260986">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8823529481887817" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9973082099596231">
+                                 <color>
+                                    <Color green="0.2862745225429535" blue="0.729411780834198" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.4431372582912445" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIconView>
+               </children></AnchorPane>
+            <Text layoutX="414.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SayHello Translator">
+               <font>
+                  <Font name="HP Simplified Bold" size="44.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.4431372582912445" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8823529481887817" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

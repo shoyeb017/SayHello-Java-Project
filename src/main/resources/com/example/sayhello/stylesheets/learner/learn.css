@@ -1,0 +1,21 @@
+.btn1{
+    -fx-font-size: 18px;
+    -fx-font-family: "HP Simplified";
+    -fx-background-color:  linear-gradient(from 0% 0% to 100% 100%, #2af598 0% , #009efd 100%);
+    -fx-text-fill:  white;
+
+}
+.btn1:hover{
+    -fx-cursor: hand;
+    -fx-font-size: 18px;
+    -fx-font-family: "HP Simplified";
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-text-fill:  #2af598;
+}
+.btn1:pressed{
+    -fx-cursor: hand;
+    -fx-font-size: 20px;
+    -fx-font-family: "HP Simplified";
+    -fx-font-weight: bold;
+}

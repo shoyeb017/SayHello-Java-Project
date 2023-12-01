@@ -1,0 +1,178 @@
+.loginbutton{
+    -fx-background-color: #20df80;
+    -fx-background-radius: 30 30 30 30;
+    -fx-font-size: 18px;
+
+}
+.loginbutton:hover{
+    -fx-background-color: #00ff92;
+    -fx-cursor: hand;
+    -fx-font-size: 20px;
+}
+.loginbutton:pressed{
+    -fx-background-color: #23e683;
+    -fx-cursor: hand;
+    -fx-font-size: 18px;
+}
+
+.createbutton:hover{
+    -fx-cursor: hand;
+    -fx-font-family: "Dubai Medium";
+    -fx-font-size: 20px;
+}
+.createbutton:pressed{
+    -fx-cursor: hand;
+    -fx-font-family: "Dubai Medium";
+    -fx-font-size: 18px;
+}
+
+.forget:hover{
+    -fx-cursor: hand;
+    -fx-font-family: "Dubai Medium";
+    -fx-font-size: 16px;
+}
+.forget:pressed{
+    -fx-cursor: hand;
+    -fx-font-family: "Dubai Medium";
+    -fx-font-size: 14px;
+}
+
+.swap_btn{
+    -fx-font-size: 18px;
+    -fx-font-family: "HP Simplified";
+    -fx-background-color: #2af598;
+    -fx-background-radius: 25px;
+    -fx-text-fill:  white;
+}
+.swap_btn:hover{
+    -fx-cursor: hand;
+    -fx-font-size: 20px;
+    -fx-font-family: "HP Simplified";
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-text-fill:  #2af598;
+}
+.swap_btn:pressed{
+    -fx-cursor: hand;
+    -fx-font-size: 18px;
+    -fx-font-family: "HP Simplified";
+    -fx-background-radius: 25px;
+    -fx-font-weight: bold;
+}
+
+
+.btn0{
+    -fx-font-size: 24px;
+    -fx-font-family: "Dubai";
+    -fx-font-weight: bold;
+    -fx-background-color:  linear-gradient(from 0% 0% to 100% 100% , #0049ba 0%, #0095ff 100%);
+    -fx-background-radius: 25px;
+    -fx-text-fill:  white;
+}
+.btn0:hover{
+    -fx-cursor: hand;
+    -fx-font-size: 24px;
+    -fx-font-family: "Dubai";
+    -fx-font-weight: bold;
+    -fx-background-color:  linear-gradient(from 0% 0% to 100% 100% ,#7100ff  0%,#e100ff 100%);
+    -fx-background-radius: 25px;
+    -fx-text-fill:  white;
+}
+.btn0:pressed{
+    -fx-cursor: hand;
+    -fx-font-size: 24px;
+    -fx-font-family: "Dubai";
+    -fx-font-weight: bold;
+    -fx-background-color:  linear-gradient(from 0% 0% to 100% 100% , #0049ba 0%, #0095ff 100%);
+    -fx-background-radius: 25px;
+    -fx-text-fill:  white;
+}
+
+
+.btn1{
+    -fx-background-color: #0049ba;
+    -fx-background-radius: 25px;
+    -fx-text-fill:  white;
+}
+.btn1:hover{
+    -fx-cursor: hand;
+    -fx-background-color:   #0095ff;
+    -fx-background-radius: 25px;
+    -fx-text-fill:  white;
+}
+
+.btn1:pressed{
+    -fx-cursor: hand;
+    -fx-background-color:  #0049ba;
+    -fx-background-radius: 25px;
+    -fx-text-fill:  white;
+}
+
+.btn2{
+    -fx-background-color: #7100ff;
+    -fx-background-radius: 25px;
+    -fx-text-fill:  white;
+}
+.btn2:hover{
+    -fx-cursor: hand;
+    -fx-background-color:   #e100ff;
+    -fx-background-radius: 25px;
+    -fx-text-fill:  white;
+}
+
+.btn2:pressed{
+    -fx-cursor: hand;
+    -fx-background-color:  #7100ff;
+    -fx-background-radius: 25px;
+}
+
+.choice-box {
+    -fx-pref-width: 230px;
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-background-color: transparent;
+    -fx-border-color:  linear-gradient(from 0% 0% to 100% 100%, #2af598 0% , #009efd 100%);
+    -fx-font-family: "HP Simplified";
+    -fx-font-size: 20px;
+    -fx-prompt-text-fill: #e8e8e8 ;
+}
+
+.choice-box .context-menu {
+    -fx-pref-width: 230px;
+}
+
+
+.combo-box {
+    -fx-pref-width: 230px;
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-background-color: transparent;
+    -fx-border-color:  linear-gradient(from 0% 0% to 100% 100%, #2af598 0% , #009efd 100%);
+    -fx-font-family: "HP Simplified";
+    -fx-font-size: 20px;
+    -fx-prompt-text-fill: white;
+}
+
+.combo-box .context-menu {
+    -fx-pref-width: 230px;
+    -fx-prompt-text-fill: white;
+}
+
+.color{
+    -fx-background-color:linear-gradient(from 0% 0% to 100% 100% ,#7100ff  0%, #e100ff 100%);
+}
+
+.color1{
+    -fx-background-color:linear-gradient(from 0% 0% to 100% 100% , #0049ba 0%, #0095ff 100%);
+/*linear-gradient(from 0% 0% to 100% 100%,  #0b0b89 0%,  #122ab5 100%)*/
+}
+
+.img_btn {
+    -fx-preserve-ratio: true;
+}
+.img_btn:hover{
+    -fx-scale-x: 1.1; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1.1; /* Increase Y scale (adjust as needed) */
+}
+.img_btn:pressed{
+    -fx-scale-x: 1; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1; /* Increase Y scale (adjust as needed) */
+}

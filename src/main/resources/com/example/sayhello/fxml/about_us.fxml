@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.about_us">
+   <children>
+      <VBox prefHeight="760.0" prefWidth="1280.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="1280.0" style="-fx-background-color: white;" stylesheets="@../stylesheets/about_us.css">
+               <children>
+                  <FontAwesomeIconView fx:id="fb" accessibleRole="HYPERLINK" fill="#3eced6" glyphName="FACEBOOK" onMouseClicked="#go_fb" size="50" styleClass="links" wrappingWidth="35.77143955230713">
+                     <HBox.margin>
+                        <Insets bottom="30.0" left="35.0" right="35.0" top="25.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fx:id="ig" fill="#3eced6" glyphName="INSTAGRAM" onMouseClicked="#go_insta" size="50" styleClass="links" wrappingWidth="35.77143955230713">
+                     <HBox.margin>
+                        <Insets bottom="30.0" left="35.0" right="35.0" top="25.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fx:id="tt" fill="#3eced6" glyphName="TWITTER" onMouseClicked="#go_twit" size="50" styleClass="links">
+                     <HBox.margin>
+                        <Insets bottom="25.0" left="35.0" right="35.0" top="25.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="texer" stylesheets="@../stylesheets/about_us.css">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texer" text="This app was developed using JavaFX and JDK 20, ">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texer" text="and implemented with IntelliJ and SceneBuilder." />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="25.0" top="25.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets right="20.0" />
+                     </opaqueInsets>
+                  </VBox>
+                  <Button mnemonicParsing="false" onMouseClicked="#go_contact_us" prefHeight="50.0" prefWidth="200.0" text="Contact Us">
+                     <HBox.margin>
+                        <Insets left="50.0" right="25.0" top="27.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets left="30.0" />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="exit" mnemonicParsing="false" onMouseClicked="#go_exit" prefHeight="50.0" prefWidth="200.0" text="Exit">
+                     <HBox.margin>
+                        <Insets left="30.0" right="25.0" top="27.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets left="30.0" />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </HBox>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="760.0" prefWidth="1280.0">
+               <content>
+                  <VBox prefHeight="2695.0" prefWidth="1270.0">
+                     <children>
+                        <ImageView fx:id="img" fitHeight="2495.0" fitWidth="1265.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/about_us.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

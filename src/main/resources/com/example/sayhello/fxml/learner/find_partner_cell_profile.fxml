@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="682.0" prefWidth="818.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #2af598 0% , #009efd 100%);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.learner.find_partner_cell_profile">
+   <children>
+      <ImageView fitHeight="682.0" fitWidth="818.0">
+         <image>
+            <Image url="@../../image/space-java2.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="16.0" layoutY="189.0" prefHeight="428.0" prefWidth="788.0" style="-fx-background-color: white; -fx-background-radius: 30px; -fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);">
+         <children>
+            <Label fx:id="f_name" alignment="CENTER" layoutX="10.0" layoutY="94.0" prefHeight="47.0" prefWidth="770.0" text="Shoyeb" textAlignment="CENTER" AnchorPane.bottomAnchor="337.0" AnchorPane.topAnchor="94.0">
+               <font>
+                  <Font name="HP Simplified Bold" size="39.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" alignment="CENTER" layoutX="1.0" layoutY="144.0" prefHeight="19.0" prefWidth="790.0" text="shoyeb@gmail.com" textAlignment="CENTER" AnchorPane.bottomAnchor="315.0" AnchorPane.topAnchor="144.0">
+               <font>
+                  <Font name="HP Simplified" size="18.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutX="95.0" layoutY="264.0" text="From" textAlignment="CENTER">
+               <font>
+                  <Font name="HP Simplified" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="301.0" layoutY="261.0" text="Native Language" textAlignment="CENTER">
+               <font>
+                  <Font name="HP Simplified" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="565.0" layoutY="260.0" text="Learning Language" textAlignment="CENTER">
+               <font>
+                  <Font name="HP Simplified" size="23.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="235.0" layoutY="353.0" rotate="90.0" startX="-100.0" />
+            <Line endX="100.0" layoutX="527.0" layoutY="353.0" rotate="90.0" startX="-100.0" />
+            <Label fx:id="from" alignment="CENTER" layoutX="27.0" layoutY="323.0" prefHeight="28.0" prefWidth="190.0" text="Bangladesh" textAlignment="CENTER">
+               <font>
+                  <Font name="HP Simplified Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="n_lang" alignment="CENTER" layoutX="248.0" layoutY="322.0" prefHeight="28.0" prefWidth="266.0" text="Bangladesh" textAlignment="CENTER">
+               <font>
+                  <Font name="HP Simplified Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="l_lang" alignment="CENTER" layoutX="534.0" layoutY="322.0" prefHeight="28.0" prefWidth="241.0" text="Bangladesh" textAlignment="CENTER">
+               <font>
+                  <Font name="HP Simplified Bold" size="23.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="GLOBE" layoutX="104.0" layoutY="420.0" size="40" />
+            <FontAwesomeIconView glyphName="HEART" layoutX="364.0" layoutY="419.0" size="40" />
+            <FontAwesomeIconView glyphName="LANGUAGE" layoutX="638.0" layoutY="421.0" size="40" />
+            <Label fx:id="bio" alignment="CENTER" layoutX="41.0" layoutY="194.0" prefHeight="19.0" prefWidth="710.0" text="shoyeb@gmail.com" textAlignment="CENTER">
+               <font>
+                  <Font name="HP Simplified" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Circle fx:id="dp" fill="DODGERBLUE" layoutX="417.0" layoutY="172.0" radius="100.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" style="-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" />
+   </children>
+</AnchorPane>

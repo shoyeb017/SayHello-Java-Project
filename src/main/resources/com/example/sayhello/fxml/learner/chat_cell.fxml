@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gridPane" prefHeight="55.0" prefWidth="345.0" style="-fx-background-color: trasnparent; -fx-background-radius: 7px;" stylesheets="@../../stylesheets/learner/chat_box.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <ImageView fitHeight="55.0" fitWidth="345.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/chatboxcell.png" />
+         </image>
+      </ImageView>
+        <Label fx:id="f_name" alignment="CENTER" layoutX="99.0" layoutY="13.0" text="first_name" textFill="AQUA">
+            <font>
+                <Font name="HP Simplified" size="25.0" />
+            </font></Label>
+        <Circle fx:id="dp" fill="DODGERBLUE" layoutX="46.0" layoutY="28.0" radius="21.0" stroke="WHITE" strokeType="INSIDE" styleClass="img_btn" />
+        <FontAwesomeIconView fx:id="arrow" fill="WHITE" glyphName="SEND" layoutX="295.0" layoutY="41.0" size="35" styleClass="img_btn" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="760.0" prefWidth="1280.0" style="-fx-background-color: #fdda5f;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.instructor.course_details">
+   <children>
+      <ImageView fitHeight="784.0" fitWidth="1324.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/course.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="danchore" layoutX="93.0" layoutY="76.0" prefHeight="687.0" prefWidth="853.0" />
+      <AnchorPane layoutY="2.0" prefHeight="778.0" prefWidth="92.0" stylesheets="@../../stylesheets/instructor/Dashboard.css">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="TASKS" layoutX="31.0" layoutY="268.0" onMouseEntered="#go_online_class" size="35" styleClass="img_btn" />
+            <FontAwesomeIconView fill="WHITE" glyphName="DOWNLOAD" layoutX="30.0" layoutY="351.0" onMouseEntered="#go_study_material" size="35" styleClass="img_btn" />
+            <FontAwesomeIconView fill="WHITE" glyphName="COMMENTS" layoutX="29.0" layoutY="430.0" onMouseEntered="#go_group_chat" selectionFill="#5fa4fd" size="35" styleClass="img_btn" />
+            <FontAwesomeIconView fx:id="exit" fill="WHITE" glyphName="POWER_OFF" layoutX="31.0" layoutY="734.0" onMouseClicked="#go_exit" size="35" styleClass="img_btn" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="74.0" prefWidth="1280.0" stylesheets="@../../stylesheets/instructor/Dashboard.css">
+         <children>
+            <Label fx:id="dp_text4" alignment="TOP_LEFT" layoutX="28.0" layoutY="8.0" prefHeight="51.0" prefWidth="357.0" style="-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" styleClass="img_btn" text="Course Portal" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="HP Simplified Bold" size="51.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="942.0" prefHeight="780.0" prefWidth="343.0">
+         <stylesheets>
+            <URL value="@../../stylesheets/learner/learner_signup1.css" />
+            <URL value="@../../stylesheets/instructor/Dashboard.css" />
+         </stylesheets>
+         <children>
+            <ImageView fitHeight="68.0" fitWidth="74.0" layoutX="152.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true" styleClass="img_btn">
+               <image>
+                  <Image url="@../../image/logo-white.png" />
+               </image>
+            </ImageView>
+            <Line endX="240.4000244140625" endY="-4.57763671875E-5" layoutX="96.0" layoutY="265.0" startX="-82.03338623046875" startY="-3.0517578125E-5" stroke="WHITE" strokeWidth="2.0" />
+            <Label fx:id="c_name" alignment="TOP_LEFT" layoutX="17.0" layoutY="320.0" prefHeight="118.0" prefWidth="319.0" style="-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" text="Learn English Binglsih" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="HP Simplified Bold" size="34.0" />
+               </font>
+            </Label>
+            <Circle fx:id="dp" fill="DODGERBLUE" layoutX="176.0" layoutY="121.0" radius="56.0" stroke="WHITE" strokeType="INSIDE" style="-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" styleClass="img_btn" />
+            <Label fx:id="dp_text1" alignment="TOP_CENTER" layoutX="1.0" layoutY="195.0" prefHeight="23.0" prefWidth="352.0" style="-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" text="Unknown person" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="c_description" alignment="TOP_LEFT" layoutX="15.0" layoutY="441.0" prefHeight="179.0" prefWidth="319.0" style="-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" text="Learn English Binglsih" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="HP Simplified" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="c_code" alignment="TOP_RIGHT" layoutX="1.0" layoutY="286.0" prefHeight="25.0" prefWidth="341.0" text="#123" textFill="#5fa4fd">
+               <font>
+                  <Font name="HP Simplified Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="dp_text2" alignment="CENTER" layoutX="8.0" layoutY="225.0" prefHeight="19.0" prefWidth="341.0" style="-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" text="perso@gmail.com" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="106.0" layoutY="736.0" prefHeight="19.0" prefWidth="169.0" style="-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" styleClass="img_btn" text="Talk to the World" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

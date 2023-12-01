@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="685.0" prefWidth="825.0" style="-fx-background-color: white; -fx-background-radius: 40px; -fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" stylesheets="@../../stylesheets/instructor/course_details.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.learner.study_material">
+   <children>
+      <ListView fx:id="study_view" layoutX="17.0" layoutY="61.0" prefHeight="545.0" prefWidth="807.0" style="-fx-background-color: white;" styleClass="date-cell" stylesheets="@../../stylesheets/instructor/course_details.css" />
+      <Label layoutX="37.0" layoutY="20.0" prefHeight="38.0" prefWidth="202.0" text="Study Material" textFill="#8166eb">
+         <font>
+            <Font name="HP Simplified Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

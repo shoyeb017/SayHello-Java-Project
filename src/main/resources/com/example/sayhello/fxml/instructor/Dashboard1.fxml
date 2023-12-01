@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.instructor.Dashboard">
+   <children>
+      <AnchorPane fx:id="danchore" layoutX="94.0" layoutY="86.0" prefHeight="675.0" prefWidth="1190.0" style="-fx-background-color: white;" styleClass="linear-gradient(from 0% 0% to 100% 100%">
+         <children>
+            <ImageView fitHeight="295.0" fitWidth="393.0" layoutX="419.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/javalogo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="327.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to" wrappingWidth="384.2000732421875">
+               <font>
+                  <Font name="HP Simplified" size="59.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="-8.0" prefHeight="94.0" prefWidth="1280.0" style="-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" styleClass="color" stylesheets="@../../stylesheets/loginpage.css">
+         <children>
+            <Circle fx:id="dp" fill="DODGERBLUE" layoutX="1192.0" layoutY="52.0" radius="35.0" stroke="WHITE" strokeType="INSIDE" style="-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" styleClass="img_btn" />
+            <Label fx:id="dp_text" alignment="CENTER_RIGHT" layoutX="849.0" layoutY="24.0" prefHeight="36.0" prefWidth="291.0" styleClass="img_btn" text="Naruto Uzuomaki" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="dp_text1" alignment="CENTER_RIGHT" layoutX="849.0" layoutY="58.0" prefHeight="19.0" prefWidth="291.0" styleClass="img_btn" text="naruto@gmail.com" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified" size="16.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Pane fx:id="p1" layoutX="-126.0" layoutY="-3.0" onMouseEntered="#dashboard_open_action1" onMouseExited="#dashboard_open_action2" prefHeight="766.0" prefWidth="180.0" style="-fx-background-color: white;" styleClass="dashboard_pane2" stylesheets="@../../stylesheets/instructor/Dashboard.css">
+         <children>
+            <Button layoutX="-2.0" layoutY="224.0" mnemonicParsing="false" onAction="#go_student" prefHeight="65.0" prefWidth="180.0" styleClass="dashboard_btn1" stylesheets="@../../stylesheets/instructor/Dashboard.css" text="Students">
+               <font>
+                  <Font name="Dubai Medium" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="-2.0" layoutY="95.0" mnemonicParsing="false" onAction="#go_add_course" prefHeight="65.0" prefWidth="180.0" styleClass="dashboard_btn1" stylesheets="@../../stylesheets/instructor/Dashboard.css" text="Add Course">
+               <font>
+                  <Font name="HP Simplified" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="-2.0" layoutY="159.0" mnemonicParsing="false" onAction="#go_all_course" prefHeight="65.0" prefWidth="180.0" styleClass="dashboard_btn1" stylesheets="@../../stylesheets/instructor/Dashboard.css" text="Your Courses">
+               <font>
+                  <Font name="Dubai Medium" size="20.0" />
+               </font>
+            </Button>
+            <Line endX="146.99998474121094" endY="-3.0517578125E-5" layoutX="32.0" layoutY="372.0" startX="-33.0" startY="-1.52587890625E-5" />
+            <Button fx:id="log_out" layoutX="-2.0" layoutY="680.0" mnemonicParsing="false" onAction="#go_log_out" prefHeight="65.0" prefWidth="180.0" styleClass="dashboard_btn1" stylesheets="@../../stylesheets/instructor/Dashboard.css" text="Log Out">
+               <font>
+                  <Font name="Dubai Medium" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="-2.0" layoutY="374.0" mnemonicParsing="false" onAction="#go_profile" prefHeight="65.0" prefWidth="180.0" styleClass="dashboard_btn1" stylesheets="@../../stylesheets/instructor/Dashboard.css" text="Profile">
+               <font>
+                  <Font name="HP Simplified" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="-2.0" layoutY="440.0" mnemonicParsing="false" onAction="#go_contact_us" prefHeight="65.0" prefWidth="180.0" styleClass="dashboard_btn1" stylesheets="@../../stylesheets/instructor/Dashboard.css" text="Contact Us">
+               <font>
+                  <Font name="Dubai Medium" size="20.0" />
+               </font>
+            </Button>
+            <Line endX="146.8000030517578" endY="-7.62939453125E-6" layoutX="33.0" layoutY="94.0" startX="-33.0" startY="-1.52587890625E-5" />
+            <Button layoutX="-2.0" layoutY="612.0" mnemonicParsing="false" onAction="#go_about_us" prefHeight="65.0" prefWidth="180.0" styleClass="dashboard_btn1" stylesheets="@../../stylesheets/instructor/Dashboard.css" text="About Us">
+               <font>
+                  <Font name="Dubai Medium" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="-2.0" onMouseEntered="#dashboard_open_action1" onMouseExited="#dashboard_open_action2" prefHeight="766.0" prefWidth="94.0" style="-fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);" styleClass="color">
+         <stylesheets>
+            <URL value="@../../stylesheets/learner/learner_signup1.css" />
+            <URL value="@../../stylesheets/instructor/Dashboard.css" />
+            <URL value="@../../stylesheets/loginpage.css" />
+         </stylesheets>
+         <children>
+            <ImageView fitHeight="68.0" fitWidth="74.0" layoutX="11.0" layoutY="17.0" onMouseClicked="#go_home" pickOnBounds="true" preserveRatio="true" styleClass="img_btn">
+               <image>
+                  <Image url="@../../image/javalogo.png" />
+               </image>
+            </ImageView>
+            <Line endX="146.99998474121094" endY="-3.0517578125E-5" layoutX="-53.0" layoutY="371.0" startX="-33.0" startY="-1.52587890625E-5" stroke="WHITE" />
+            <Line endX="146.99998474121094" endY="-3.0517578125E-5" layoutX="-53.0" layoutY="89.0" startX="-33.0" startY="-1.52587890625E-5" stroke="WHITE" />
+            <FontAwesomeIconView fill="WHITE" glyphName="LAPTOP" layoutX="32.0" layoutY="139.0" size="30" styleClass="img_btn" />
+            <FontAwesomeIconView fill="WHITE" glyphName="FILE_TEXT" layoutX="37.0" layoutY="203.0" size="28" styleClass="img_btn" />
+            <FontAwesomeIconView fill="WHITE" glyphName="GRADUATION_CAP" layoutX="29.0" layoutY="272.0" size="33" styleClass="img_btn" />
+            <FontAwesomeIconView fill="WHITE" glyphName="ADDRESS_CARD" layoutX="33.0" layoutY="416.0" size="27" styleClass="img_btn" />
+            <FontAwesomeIconView fill="WHITE" glyphName="TTY" layoutX="34.0" layoutY="483.0" size="29" styleClass="img_btn" />
+            <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="31.0" layoutY="658.0" size="30" styleClass="img_btn" />
+            <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" layoutX="36.0" layoutY="723.0" size="30" styleClass="img_btn" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

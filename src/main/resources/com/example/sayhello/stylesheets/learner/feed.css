@@ -1,0 +1,22 @@
+.img_btn {
+    -fx-preserve-ratio: true;
+}
+.img_btn:hover{
+    -fx-scale-x: 1.1; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1.1; /* Increase Y scale (adjust as needed) */
+}
+.img_btn:pressed{
+    -fx-scale-x: 1; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1; /* Increase Y scale (adjust as needed) */
+}
+
+.list-cell:odd {
+    -fx-background-color:  #e4e4e4;
+}
+.list-cell:even {
+    -fx-background-color:  #e4e4e4;
+}
+
+.list-cell:selected {
+    -fx-background-color: #e4e4e4; /* Set your desired background color for selected items */
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="675.0" prefWidth="1190.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.learner.chat">
+   <children>
+      <ListView fx:id="chat_view" layoutX="1.0" layoutY="72.0" prefHeight="605.0" prefWidth="360.0" style="-fx-background-color: white;" styleClass="list-cell" stylesheets="@../../stylesheets/learner/chat_box.css" />
+      <Line endX="696.5333251953125" endY="7.62939453125E-6" layoutX="64.0" layoutY="333.0" rotate="90.0" startX="-100.0" stroke="#b7b2b2" />
+      <Line endX="154.5999755859375" endY="7.62939453125E-6" layoutX="208.0" layoutY="67.0" startX="-207.00001525878906" startY="7.62939453125E-6" stroke="#b7b2b2" />
+      <Text fill="#0095ff" layoutX="15.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ChatBox">
+         <font>
+            <Font name="HP Simplified Bold" size="40.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="587.0" fitWidth="700.0" layoutX="493.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/l4.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="h1" fill="#b7b2b2" layoutX="697.0" layoutY="584.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selete one to start chatting">
+         <font>
+            <Font name="HP Simplified" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

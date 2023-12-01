@@ -1,0 +1,8 @@
+file:/D:/Java%20Project/All%20Resouce/luffy.jpg
+hello Anya
+file:/D:/Java%20Project/All%20Resouce/luffy.jpg
+how are you?
+file:/D:/Java%20Project/All%20Resouce/anya.jpg
+hi there Luffy
+file:/D:/Java%20Project/All%20Resouce/anya.jpg
+I'm fine. you?

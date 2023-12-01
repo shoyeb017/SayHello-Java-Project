@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.Forgot_pass">
+   <children>
+      <PasswordField fx:id="new_pass" focusTraversable="false" layoutX="105.0" layoutY="330.0" prefHeight="32.0" prefWidth="228.0" promptText="New Password" style="-fx-background-color: transparent;">
+         <font>
+            <Font name="HP Simplified Bold" size="17.0" />
+         </font>
+      </PasswordField>
+      <FontAwesomeIconView glyphName="REFRESH" layoutX="82.0" layoutY="354.0" size="25">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.6196078658103943" blue="0.9921568632125854" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.16470588743686676" green="0.9607843160629272" blue="0.5960784554481506" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </FontAwesomeIconView>
+      <Line endX="129.5" layoutX="203.0" layoutY="364.0" startX="-125.5" strokeWidth="2.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.6196078658103943" blue="0.9921568632125854" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color green="0.6196078658103943" blue="0.9921568632125854" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.16470588743686676" green="0.9607843160629272" blue="0.5960784554481506" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Button fx:id="close_btn" layoutX="80.0" layoutY="490.0" mnemonicParsing="false" onAction="#close" prefHeight="39.0" prefWidth="257.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #e100ff 0% , #009efd 100%); -fx-background-radius: 20px;" styleClass="img_btn" stylesheets="@../stylesheets/learner/Dashboard.css" text="Confirm" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="3.0" layoutY="225.0" prefHeight="38.0" prefWidth="393.0" text="Change Password" textAlignment="CENTER">
+         <font>
+            <Font name="HP Simplified Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="5.0" layoutY="259.0" prefHeight="38.0" prefWidth="393.0" text="Please give your new password to login" textAlignment="CENTER">
+         <font>
+            <Font name="HP Simplified" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="187.0" fitWidth="207.0" layoutX="116.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/confirm_pass.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="confirm_pass" layoutX="106.0" layoutY="392.0" prefHeight="32.0" prefWidth="228.0" promptText="Confirm Password" style="-fx-background-color: transparent;">
+         <font>
+            <Font name="HP Simplified Bold" size="17.0" />
+         </font>
+      </PasswordField>
+      <FontAwesomeIconView glyphName="RETWEET" layoutX="81.0" layoutY="416.0" size="25">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.6196078658103943" blue="0.9921568632125854" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.16470588743686676" green="0.9607843160629272" blue="0.5960784554481506" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </FontAwesomeIconView>
+      <Line endX="129.5" layoutX="204.0" layoutY="426.0" startX="-125.5" strokeWidth="2.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.6196078658103943" blue="0.9921568632125854" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color green="0.6196078658103943" blue="0.9921568632125854" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.16470588743686676" green="0.9607843160629272" blue="0.5960784554481506" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Label fx:id="error_text4" alignment="CENTER" layoutY="433.0" prefHeight="18.0" prefWidth="400.0" textFill="RED">
+         <font>
+            <Font name="HP Simplified" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

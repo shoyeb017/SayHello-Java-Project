@@ -1,0 +1,46 @@
+.text-field{
+    -fx-prompt-text-fill: #28666b;
+
+}
+
+.password-field{
+    -fx-prompt-text-fill: #28666b;
+}
+
+.date-picker {
+    -fx-font-family: "HP Simplified";
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #28666b;
+   }
+
+
+#pane1{
+    -fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);
+}
+
+.choice-box {
+    -fx-pref-width: 430px;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-background-color: transparent;
+    -fx-border-color:  linear-gradient(from 0% 0% to 100% 100% ,#7100ff  0%, #e100ff 100%);
+    -fx-font-family: "HP Simplified";
+    -fx-font-size: 14px;
+}
+
+.choice-box .context-menu {
+    -fx-pref-width: 430px;
+}
+
+.sign_btn {
+    -fx-preserve-ratio: true;
+}
+.sign_btn:hover{
+    -fx-scale-x: 1.1; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1.1; /* Increase Y scale (adjust as needed) */
+}
+.sign_btn:pressed{
+    -fx-scale-x: 1; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1; /* Increase Y scale (adjust as needed) */
+}
+
+

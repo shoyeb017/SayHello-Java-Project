@@ -1,0 +1,46 @@
+.links{
+
+}
+.links:hover{
+    -fx-fill: linear-gradient(from 0% 0% to 70% 70%, #00ff8b 0% , #008bfd 70%);
+    -fx-scale-x: 1.2; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1.2; /* Increase Y scale (adjust as needed) */
+}
+.links:pressed
+{
+    -fx-background-color: linear-gradient(from 0% 0% to 70% 70%, #008bfd 0% , #00ff8b 70%);
+    /*-fx-background-radius: 10px;*/
+    -fx-scale-y: 1.0;
+    -fx-scale-x: 1.0;
+}
+
+.texer
+{
+    -fx-fill: #0093c0;
+    -fx-font-size: 16px;
+}
+.button{
+    -fx-background-color: transparent;
+    -fx-font-size: 20px;
+    -fx-border-color: #0093c0;
+    -fx-border-radius: 10px;
+    -fx-text-fill: #0093c0;
+
+
+}
+.button:hover
+{
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #00ff8b 0% , #008bfd 100%);
+    -fx-background-radius: 10px;
+    -fx-scale-y: 1.05;
+    -fx-scale-x: 1.05;
+    -fx-text-fill: white;
+}
+.button:pressed
+{
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #008bfd 0% , #00ff8b 100%);
+    -fx-background-radius: 10px;
+    -fx-scale-y: 1.0;
+    -fx-scale-x: 1.0;
+    -fx-text-fill: white;
+}

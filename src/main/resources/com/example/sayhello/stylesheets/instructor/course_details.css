@@ -1,0 +1,98 @@
+/* Make the DatePicker transparent */
+.date-picker .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.date-picker .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #00FFFF;
+}
+
+.date-picker .date-cell {
+    -fx-background-color: transparent;
+}
+
+/* Remove border from the text field */
+.date-picker .text-field {
+    -fx-border-width: 0;
+}
+
+/* Remove the border from the popup content */
+.date-picker .popup-content {
+    -fx-background-color: transparent;
+}
+
+
+/* Adjust the text color in the text field */
+.date-picker .text-field .text {
+    -fx-text-fill: #00FFFF; /* Change the text color as needed */
+}
+
+
+.choice-box .text {
+    -fx-fill: #00FFFF; /* Sets the color of the prompt text to white */
+}
+
+.choice-box .arrow {
+    -fx-background-color: white; /* Sets the color of the arrow button to white */
+}
+
+.choice-box {
+    -fx-background-color: transparent; /* Sets the background color of the ChoiceBox to transparent */
+    -fx-border-color: white; /* Sets the border color to white */
+}
+
+.choice-box .menu-button .menu {
+    -fx-background-color: black; /* Sets the background color of the dropdown menu to transparent */
+}
+
+.choice-box .menu-button .menu-item {
+    -fx-background-color: black; /* Sets the background color of menu items to transparent */
+    -fx-text-fill: #00FFFF; /* Sets the text color of menu items to white */
+}
+
+.text-field {
+    -fx-text-fill: white; /* Sets the text color to white */
+    -fx-prompt-text-fill: white;
+}
+
+
+.img_btn {
+    -fx-preserve-ratio: true;
+}
+.img_btn:hover{
+    -fx-scale-x: 1.1; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1.1; /* Increase Y scale (adjust as needed) */
+}
+.img_btn:pressed{
+    -fx-scale-x: 1; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1; /* Increase Y scale (adjust as needed) */
+}
+
+.img_btn1 {
+    -fx-preserve-ratio: true;
+    -fx-scale-x: 0.98; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 0.98; /* Increase Y scale (adjust as needed) */
+}
+.img_btn1:hover{
+    -fx-scale-x: 1; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1; /* Increase Y scale (adjust as needed) */
+}
+
+
+.list-cell:odd {
+    -fx-background-color: white;
+
+}
+.list-cell:even {
+    -fx-background-color: white;
+}
+
+.progress-bar {
+    -fx-accent: #00FF00;
+}
+
+.progress-bar .track {
+    -fx-background-color: transparent;
+}
+

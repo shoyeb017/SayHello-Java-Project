@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="lanchore2" prefHeight="760.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.learner.signup">
+   <children>
+      <Rectangle fx:id="a1" arcHeight="5.0" arcWidth="5.0" height="789.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="1280.0">
+         <fill>
+            <LinearGradient endX="0.9734848195856268" endY="0.9242424219846725" startX="0.23863636183016235">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.2862745225429535" blue="0.729411780834198" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.5843137502670288" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fx:id="logo" fitHeight="84.0" fitWidth="105.0" layoutX="153.0" layoutY="609.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="91.0" AnchorPane.leftAnchor="153.0" AnchorPane.topAnchor="609.0">
+         <image>
+            <Image url="@../../image/logo-white.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="pane1" layoutX="399.0" layoutY="115.0" prefHeight="602.0" prefWidth="496.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),10,0.5,0,0);">
+         <children>
+            <Text fill="#28666b" layoutX="36.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You cannot change your region and mother tongue after selecting it. Please provide auuthentic personal information." textAlignment="CENTER" wrappingWidth="428.1166477203369">
+               <font>
+                  <Font name="HP Simplified" size="14.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I'm from" textAlignment="CENTER" wrappingWidth="495.9929504394531">
+               <font>
+                  <Font name="HP Simplified" size="28.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color green="0.2862745225429535" blue="0.729411780834198" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="0.5843137502670288" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text fx:id="sign" layoutX="6.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="2.0" text="Almost Done!! " textAlignment="CENTER" wrappingWidth="498.7240219116211">
+               <font>
+                  <Font name="HP Simplified Bold" size="36.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color green="0.2862745225429535" blue="0.729411780834198" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="0.5843137502670288" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Button layoutX="36.0" layoutY="515.0" mnemonicParsing="false" onAction="#switch_learner_signup3" prefHeight="50.0" prefWidth="429.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100% , #0049ba 0%, #0095ff 100%);" styleClass="sign_btn" stylesheets="@../../stylesheets/learner/learner_signup1.css" text="Next" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="HP Simplified Bold" size="27.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="from" layoutX="36.0" layoutY="139.0" prefHeight="28.0" prefWidth="429.0" stylesheets="@../../stylesheets/learner/learner_signup1.css" />
+            <Text fontSmoothingType="LCD" layoutX="-1.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Native Language" textAlignment="CENTER" wrappingWidth="495.9929504394531">
+               <font>
+                  <Font name="HP Simplified" size="28.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color green="0.2862745225429535" blue="0.729411780834198" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="0.5843137502670288" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <ChoiceBox fx:id="native_lang" layoutX="36.0" layoutY="264.0" prefHeight="28.0" prefWidth="429.0" stylesheets="@../../stylesheets/learner/learner_signup1.css" />
+            <Text fontSmoothingType="LCD" layoutX="-1.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I'm learning" textAlignment="CENTER" wrappingWidth="495.9929504394531">
+               <font>
+                  <Font name="HP Simplified" size="28.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color green="0.2862745225429535" blue="0.729411780834198" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="0.5843137502670288" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <ChoiceBox fx:id="learn_lang" layoutX="36.0" layoutY="393.0" prefHeight="28.0" prefWidth="429.0" stylesheets="@../../stylesheets/learner/learner_signup1.css" />
+            <Label fx:id="error_text1" layoutX="52.0" layoutY="448.0" prefHeight="15.0" prefWidth="390.0" textFill="RED">
+               <font>
+                  <Font name="HP Simplified" size="12.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Line endX="100.0" layoutX="529.0" layoutY="53.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Circle fill="#f0f3f500" layoutX="410.0" layoutY="53.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="648.0" layoutY="55.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Line endX="100.0" layoutX="767.0" layoutY="53.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+      <Circle fill="#ffffff00" layoutX="887.0" layoutY="54.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Text fill="#f0f3f5" layoutX="402.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+         <font>
+            <Font name="HP Simplified" size="31.0" />
+         </font>
+      </Text>
+      <Text layoutX="639.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+         <font>
+            <Font name="HP Simplified" size="31.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.2862745225429535" blue="0.729411780834198" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.5843137502670288" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fill="WHITE" layoutX="880.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+         <font>
+            <Font name="HP Simplified" size="31.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="397.0" fitWidth="529.0" layoutX="3.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/sign21.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="25.0" layoutY="532.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Now learn language while walking, eating, playing or doing anything at anytime" textAlignment="CENTER" wrappingWidth="339.00000000000006">
+         <font>
+            <Font name="HP Simplified" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="logo1" fitHeight="84.0" fitWidth="105.0" layoutX="1031.0" layoutY="606.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/logo-white.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="397.0" fitWidth="529.0" layoutX="882.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/sign22.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="904.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Did you know? Consistency is key. Small efforts daily lead to big results in language learning" textAlignment="CENTER" wrappingWidth="339.00000000000006">
+         <font>
+            <Font name="HP Simplified" size="19.0" />
+         </font>
+      </Text>
+      <Button layoutX="91.0" layoutY="59.0" mnemonicParsing="false" onAction="#back_sign1" prefHeight="51.0" prefWidth="94.0" style="-fx-background-color: white;" styleClass="img_btn" text="Back" textAlignment="CENTER">
+         <font>
+            <Font name="HP Simplified Bold" size="26.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.2862745225429535" blue="0.729411780834198" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.5843137502670288" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <stylesheets>
+            <URL value="@../../stylesheets/learner/learner_signup1.css" />
+            <URL value="@../../stylesheets/loginpage.css" />
+         </stylesheets>
+      </Button>
+   </children>
+</AnchorPane>

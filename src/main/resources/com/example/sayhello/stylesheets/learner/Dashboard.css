@@ -1,0 +1,43 @@
+
+.dashboard_pane2
+{
+    -fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),15,0.5,0,0);
+}
+
+.dashboard_pane3
+{
+    -fx-effect: dropshadow(gaussian,rgba(0,0,0,0.3),15,0.5,0,0);
+}
+
+.dashboard_btn1{
+
+    -fx-background-color: transparent;
+}
+.dashboard_btn1:hover{
+    -fx-cursor: hand;
+    -fx-font-size: 22px;
+    -fx-font-family: "HP Simplified";
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+.dashboard_btn1:pressed{
+    -fx-cursor: hand;
+    -fx-font-size: 20px;
+    -fx-font-family: "HP Simplified";
+    -fx-font-weight: bold;
+}
+
+.img_btn {
+    -fx-preserve-ratio: true;
+}
+.img_btn:hover{
+    -fx-scale-x: 1.1; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1.1; /* Increase Y scale (adjust as needed) */
+}
+.img_btn:pressed{
+    -fx-scale-x: 1; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1; /* Increase Y scale (adjust as needed) */
+}
+
+

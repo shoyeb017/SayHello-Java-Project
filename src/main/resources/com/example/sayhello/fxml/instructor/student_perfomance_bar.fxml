@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gridPane" prefHeight="396.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100% ,#7100ff  0%, #e100ff 100%);" stylesheets="@../../stylesheets/instructor/add_course.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sayhello.controllers.instructor.student_perfomance_bar">
+   <children>
+      <Label fx:id="name" alignment="CENTER" layoutY="66.0" prefHeight="54.0" prefWidth="600.0" styleClass="img_btn" text="Shoyeb Haquee" textFill="AQUA">
+         <font>
+            <Font name="HP Simplified Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="11.0" prefHeight="54.0" prefWidth="600.0" text="Give Perfomance rate to" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Bold" size="32.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="WHITE" glyphName="STAR" layoutX="294.0" layoutY="179.0" size="55" />
+      <Label fx:id="rate" alignment="CENTER" layoutX="229.0" layoutY="134.0" prefHeight="54.0" prefWidth="64.0" styleClass="img_btn" text="0" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Bold" size="44.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fx:id="c1" fill="#ffee00" glyphName="STAR" layoutX="33.0" layoutY="260.0" onMouseClicked="#c1" size="45" styleClass="img_btn" />
+      <FontAwesomeIconView fx:id="c2" fill="#ffee00" glyphName="STAR" layoutX="85.0" layoutY="260.0" onMouseClicked="#c2" size="45" styleClass="img_btn" />
+      <FontAwesomeIconView fx:id="c3" fill="#ffee00" glyphName="STAR" layoutX="140.0" layoutY="260.0" onMouseClicked="#c3" size="45" styleClass="img_btn" />
+      <FontAwesomeIconView fx:id="c4" fill="#ffee00" glyphName="STAR" layoutX="197.0" layoutY="260.0" onMouseClicked="#c4" size="45" styleClass="img_btn" />
+      <FontAwesomeIconView fx:id="c5" fill="#ffee00" glyphName="STAR" layoutX="254.0" layoutY="260.0" onMouseClicked="#c5" size="45" styleClass="img_btn" />
+      <FontAwesomeIconView fx:id="c6" fill="#ffee00" glyphName="STAR" layoutX="306.0" layoutY="260.0" onMouseClicked="#c6" size="45" styleClass="img_btn" />
+      <FontAwesomeIconView fx:id="c7" fill="#ffee00" glyphName="STAR" layoutX="358.0" layoutY="260.0" onMouseClicked="#c7" size="45" styleClass="img_btn" />
+      <FontAwesomeIconView fx:id="c8" fill="#ffee00" glyphName="STAR" layoutX="413.0" layoutY="260.0" onMouseClicked="#c8" size="45" styleClass="img_btn" />
+      <FontAwesomeIconView fx:id="c9" fill="#ffee00" glyphName="STAR" layoutX="470.0" layoutY="260.0" onMouseClicked="#c9" size="45" styleClass="img_btn" />
+      <FontAwesomeIconView fx:id="c10" fill="#ffee00" glyphName="STAR" layoutX="527.0" layoutY="260.0" onMouseClicked="#c10" size="45" styleClass="img_btn" />
+      <Label alignment="CENTER" layoutX="1.0" layoutY="270.0" prefHeight="30.0" prefWidth="600.0" text="Choose the star to give rate" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="215.0" layoutY="330.0" mnemonicParsing="false" onAction="#go_done" prefHeight="38.0" prefWidth="167.0" style="-fx-background-color: white; -fx-background-radius: 20px;" styleClass="img_btn" text="Done">
+         <font>
+            <Font name="HP Simplified Bold" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

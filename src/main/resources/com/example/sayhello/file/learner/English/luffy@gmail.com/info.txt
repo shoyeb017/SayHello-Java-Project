@@ -1,0 +1,10 @@
+Monkey
+Luffy
+luffy@gmail.com
+1234
+Male
+USA
+English
+Japanese
+file:/D:/Java%20Project/All%20Resouce/luffy.jpg
+I want to pirate king of the world

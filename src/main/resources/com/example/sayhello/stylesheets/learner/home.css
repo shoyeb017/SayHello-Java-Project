@@ -1,0 +1,145 @@
+.bg
+{
+    -fx-background-color: white;
+}
+.profilepic
+{
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-background-radius: 100px;
+
+}
+.name{
+    -fx-font-family: "HP Simplified";
+    -fx-font-size: 30px;
+    -fx-text-fill: black;
+}
+.rectangle {
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 15px;
+    -fx-border-color: white ;
+}
+.rectangle:hover{
+    /*-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #2af598 0% , #009efd 100%);*/
+    -fx-scale-x: 1.03; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1.03; /* Increase Y scale (adjust as needed) */
+
+}
+
+.texts
+{
+    -fx-font-family: "HP Simplified";
+    -fx-text-fill: black;
+    -fx-background-radius: 20px;
+    -fx-background-color: #e1e0e0;
+    -fx-font-size: 20px;
+    -fx-border-color: transparent;
+}
+.translate{
+    -fx-font-family: "HP Simplified";
+    -fx-text-fill: white;
+    -fx-background-radius: 50;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #5ddea2 0% , #55cfe5 100%);
+    -fx-font-size: 20px;
+    -fx-border-color: transparent;
+
+}
+.translate:hover{
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #68f8b5 0% , #5de5ff 100%);
+    /*-fx-scale-x: 1.05; !* Increase X scale (adjust as needed) *!*/
+    /*-fx-scale-y: 1.05; !* Increase Y scale (adjust as needed) *!*/
+}
+.translate:pressed{
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #5ddea2 0% , #55cfe5 100%);
+    -fx-scale-x: 0.98; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 0.98; /* Increase Y scale (adjust as needed) */
+
+}
+.externallink{
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #5ddea2 0% , #55cfe5 100%);
+}
+.externallink:hover
+{
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #3dffa5 0% , #43e2ff 100%);
+    -fx-scale-x: 1.05; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1.05; /* Increase Y scale (adjust as needed) */
+}
+.externallink:pressed
+{
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #5ddea2 0% , #55cfe5 100%);
+    -fx-scale-x: 1; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1; /* Increase Y scale (adjust as needed) */
+}
+
+.progress-indicator
+{
+    -fx-progress-color: #0049ba;
+}
+.circlee
+{
+    -fx-fill: white;
+    -fx-border-color: transparent;
+    -fx-stroke-width: 0px;
+
+}
+.courseprog{
+    -fx-font-family: "HP Simplified";
+    -fx-background-color: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #008bfd;
+}
+.percentagee{
+    -fx-font-family: "HP Simplified";
+    -fx-font-size: 52;
+    -fx-text-fill: #008bfd;
+    -fx-font-weight: bold;
+}
+
+.smallbox{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-family: "HP Simplified";
+    -fx-font-size: 25px;
+    -fx-text-fill: #000000;
+
+}
+
+.change{
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #5ddea2 0% , #55cfe5 100%);
+}
+.change:hover
+{
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #3dffa5 0% , #43e2ff 100%);
+}
+.change:pressed
+{
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #5ddea2 0% , #55cfe5 100%);
+}
+.invisiblebutton{
+
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10px;
+}
+.invisiblebutton:hover{
+    -fx-background-color: #d8d8d8;
+    -fx-border-color: transparent;
+}
+.invisiblebutton:pressed{
+    -fx-background-color: #e8e8e8;
+    -fx-border-color: transparent;
+}
+
+.img_btn {
+    -fx-preserve-ratio: true;
+}
+.img_btn:hover{
+    -fx-scale-x: 1.1; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1.1; /* Increase Y scale (adjust as needed) */
+}
+.img_btn:pressed{
+    -fx-scale-x: 1; /* Increase X scale (adjust as needed) */
+    -fx-scale-y: 1; /* Increase Y scale (adjust as needed) */
+}
+

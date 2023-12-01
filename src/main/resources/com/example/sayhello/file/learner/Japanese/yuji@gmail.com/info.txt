@@ -1,0 +1,10 @@
+Yuji
+Itadori
+yuji@gmail.com
+1234
+Male
+Japan
+Japanese
+English
+file:/D:/Java%20Project/All%20Resouce/yuji.jpg
+Hello there. I want to learn English.

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="gridPane" prefHeight="200.0" prefWidth="474.0" style="-fx-background-radius: 20px; -fx-background-color: transparent;" stylesheets="@../../stylesheets/instructor/add_course.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="arrow" layoutX="305.0" layoutY="27.0" styleClass="img_btn">
+         <children>
+            <ImageView fitHeight="160.0" fitWidth="200.0" layoutX="-1.0" layoutY="-3.0">
+               <image>
+                  <Image url="@../../image/Asset.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="108.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enroll">
+               <font>
+                  <Font name="HP Simplified Bold Italic" size="23.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="104.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Now">
+               <font>
+                  <Font name="HP Simplified Bold Italic" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="184.0" fitWidth="406.0" layoutX="11.0" layoutY="10.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../image/allcourseCell.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="c_name" alignment="TOP_LEFT" layoutX="80.0" layoutY="27.0" prefHeight="54.0" prefWidth="253.0" styleClass="img_btn" text="English Course">
+         <font>
+            <Font name="HP Simplified Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="c_description" alignment="TOP_LEFT" layoutX="77.0" layoutY="84.0" prefHeight="91.0" prefWidth="319.0" text="English Course" wrapText="true">
+         <font>
+            <Font name="HP Simplified" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="c_code" alignment="CENTER_RIGHT" layoutX="157.0" layoutY="25.0" prefHeight="22.0" prefWidth="230.0" text="123">
+         <font>
+            <Font name="HP Simplified Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

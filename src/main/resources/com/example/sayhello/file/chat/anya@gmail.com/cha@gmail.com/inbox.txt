@@ -1,0 +1,4 @@
+file:/D:/Java%20Project/All%20Resouce/cha.jpg
+hello Anya
+file:/D:/Java%20Project/All%20Resouce/anya.jpg
+hello there
